@@ -13,6 +13,8 @@
 		2C5FE12027772A7E00B8AB11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C5FE11E27772A7E00B8AB11 /* Main.storyboard */; };
 		2C5FE12227772A8C00B8AB11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5FE12127772A8C00B8AB11 /* Assets.xcassets */; };
 		2C5FE12527772A8C00B8AB11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C5FE12327772A8C00B8AB11 /* LaunchScreen.storyboard */; };
+		2CCF5FFC27787D9100CE02DB /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF5FFA27787D9100CE02DB /* CurrencyTableViewCell.swift */; };
+		2CCF5FFD27787D9100CE02DB /* CurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CCF5FFB27787D9100CE02DB /* CurrencyTableViewCell.xib */; };
 		E51D18B205EE05181E9A740D /* Pods_AlamofireTableViewTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51EAD029C966DF1D6D987D41 /* Pods_AlamofireTableViewTutorial.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		2C5FE12127772A8C00B8AB11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C5FE12427772A8C00B8AB11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C5FE12627772A8C00B8AB11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CCF5FFA27787D9100CE02DB /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		2CCF5FFB27787D9100CE02DB /* CurrencyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyTableViewCell.xib; sourceTree = "<group>"; };
 		51EAD029C966DF1D6D987D41 /* Pods_AlamofireTableViewTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamofireTableViewTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B70DB6D518EE081010AD9509 /* Pods-AlamofireTableViewTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireTableViewTutorial.debug.xcconfig"; path = "Target Support Files/Pods-AlamofireTableViewTutorial/Pods-AlamofireTableViewTutorial.debug.xcconfig"; sourceTree = "<group>"; };
 		E07C605ED2B08A7242316E97 /* Pods-AlamofireTableViewTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireTableViewTutorial.release.xcconfig"; path = "Target Support Files/Pods-AlamofireTableViewTutorial/Pods-AlamofireTableViewTutorial.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 				2C5FE11827772A7E00B8AB11 /* AppDelegate.swift */,
 				2C5FE11A27772A7E00B8AB11 /* SceneDelegate.swift */,
 				2C5FE11C27772A7E00B8AB11 /* CurrencyViewController.swift */,
+				2CCF5FFA27787D9100CE02DB /* CurrencyTableViewCell.swift */,
+				2CCF5FFB27787D9100CE02DB /* CurrencyTableViewCell.xib */,
 				2C5FE11E27772A7E00B8AB11 /* Main.storyboard */,
 				2C5FE12127772A8C00B8AB11 /* Assets.xcassets */,
 				2C5FE12327772A8C00B8AB11 /* LaunchScreen.storyboard */,
@@ -150,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CCF5FFD27787D9100CE02DB /* CurrencyTableViewCell.xib in Resources */,
 				2C5FE12527772A8C00B8AB11 /* LaunchScreen.storyboard in Resources */,
 				2C5FE12227772A8C00B8AB11 /* Assets.xcassets in Resources */,
 				2C5FE12027772A7E00B8AB11 /* Main.storyboard in Resources */,
@@ -205,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CCF5FFC27787D9100CE02DB /* CurrencyTableViewCell.swift in Sources */,
 				2C5FE11D27772A7E00B8AB11 /* CurrencyViewController.swift in Sources */,
 				2C5FE11927772A7E00B8AB11 /* AppDelegate.swift in Sources */,
 				2C5FE11B27772A7E00B8AB11 /* SceneDelegate.swift in Sources */,
