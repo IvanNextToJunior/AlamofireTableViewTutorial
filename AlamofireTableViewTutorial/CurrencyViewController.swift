@@ -9,11 +9,15 @@ import UIKit
 
 class CurrencyViewController: UIViewController {
    
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak private var tableView: UITableView!
+    
+    private let identifier = "cell"
+    private let nib = UINib(nibName: "CurrencyTableViewCell", bundle: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        tableView.register(nib, forCellReuseIdentifier: identifier)
+   
     }
 
 
