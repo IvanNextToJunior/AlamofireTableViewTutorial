@@ -12,11 +12,13 @@ class MusicViewController: UIViewController {
     @IBOutlet weak private var tableView: UITableView!
     
     private let identifier = "cell"
-    private let nib = UINib(nibName: "CurrencyTableViewCell", bundle: nil)
-    private let id = "8036384"
+    private let nib = UINib(nibName: "MusicTableViewCell", bundle: nil)
     
-    
+    var link: URL?
     private var array: [String] = []
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -42,26 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1357" y="48"/>
-        </scene>
-        <!--Auth View Controller-->
-        <scene sceneID="h7w-xr-hqb">
-            <objects>
-                <viewController id="rHc-te-O3y" customClass="AuthViewController" customModule="AlamofireTableViewTutorial" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZKH-Qi-DFg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="DVb-kA-vky"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="EMd-lx-B17"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="music" id="Cdu-FJ-jdS"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8mD-Gr-Ggc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="562" y="48"/>
+            <point key="canvasLocation" x="541" y="80"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7Hw-qh-XSq">
@@ -74,7 +55,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="rHc-te-O3y" kind="relationship" relationship="rootViewController" id="quf-9Y-nZv"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9tS-bN-0TC"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EXU-U9-Bed" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
