@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CurrencyViewController: UIViewController {
+class MusicViewController: UIViewController {
     
     @IBOutlet weak private var tableView: UITableView!
     
@@ -25,7 +25,7 @@ class CurrencyViewController: UIViewController {
     
 }
 
-extension CurrencyViewController: UITableViewDataSource {
+extension MusicViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return array.count

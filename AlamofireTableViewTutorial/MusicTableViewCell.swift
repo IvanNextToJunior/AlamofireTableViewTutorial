@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CurrencyTableViewCell: UITableViewCell {
+class MusicTableViewCell: UITableViewCell {
 
    
     
