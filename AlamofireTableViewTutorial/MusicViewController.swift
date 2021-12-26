@@ -13,6 +13,8 @@ class MusicViewController: UIViewController {
     
     private let identifier = "cell"
     private let nib = UINib(nibName: "CurrencyTableViewCell", bundle: nil)
+    private let id = "8036384"
+    
     
     private var array: [String] = []
     
