@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2C5FE11927772A7E00B8AB11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5FE11827772A7E00B8AB11 /* AppDelegate.swift */; };
 		2C5FE11B27772A7E00B8AB11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5FE11A27772A7E00B8AB11 /* SceneDelegate.swift */; };
-		2C5FE11D27772A7E00B8AB11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5FE11C27772A7E00B8AB11 /* ViewController.swift */; };
+		2C5FE11D27772A7E00B8AB11 /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5FE11C27772A7E00B8AB11 /* CurrencyViewController.swift */; };
 		2C5FE12027772A7E00B8AB11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C5FE11E27772A7E00B8AB11 /* Main.storyboard */; };
 		2C5FE12227772A8C00B8AB11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5FE12127772A8C00B8AB11 /* Assets.xcassets */; };
 		2C5FE12527772A8C00B8AB11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C5FE12327772A8C00B8AB11 /* LaunchScreen.storyboard */; };
@@ -20,7 +20,7 @@
 		2C5FE11527772A7E00B8AB11 /* AlamofireTableViewTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamofireTableViewTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C5FE11827772A7E00B8AB11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C5FE11A27772A7E00B8AB11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2C5FE11C27772A7E00B8AB11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C5FE11C27772A7E00B8AB11 /* CurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
 		2C5FE11F27772A7E00B8AB11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C5FE12127772A8C00B8AB11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C5FE12427772A8C00B8AB11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 			children = (
 				2C5FE11827772A7E00B8AB11 /* AppDelegate.swift */,
 				2C5FE11A27772A7E00B8AB11 /* SceneDelegate.swift */,
-				2C5FE11C27772A7E00B8AB11 /* ViewController.swift */,
+				2C5FE11C27772A7E00B8AB11 /* CurrencyViewController.swift */,
 				2C5FE11E27772A7E00B8AB11 /* Main.storyboard */,
 				2C5FE12127772A8C00B8AB11 /* Assets.xcassets */,
 				2C5FE12327772A8C00B8AB11 /* LaunchScreen.storyboard */,
@@ -88,7 +88,6 @@
 				B70DB6D518EE081010AD9509 /* Pods-AlamofireTableViewTutorial.debug.xcconfig */,
 				E07C605ED2B08A7242316E97 /* Pods-AlamofireTableViewTutorial.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -206,7 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C5FE11D27772A7E00B8AB11 /* ViewController.swift in Sources */,
+				2C5FE11D27772A7E00B8AB11 /* CurrencyViewController.swift in Sources */,
 				2C5FE11927772A7E00B8AB11 /* AppDelegate.swift in Sources */,
 				2C5FE11B27772A7E00B8AB11 /* SceneDelegate.swift in Sources */,
 			);
