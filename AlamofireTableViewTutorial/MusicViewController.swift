@@ -35,7 +35,7 @@ extension MusicViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! CurrencyTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! MusicTableViewCell
         
         return cell
     }
