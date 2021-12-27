@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MusicTableViewCell: UITableViewCell {
+class PersonTableViewCell: UITableViewCell {
 
    
     
