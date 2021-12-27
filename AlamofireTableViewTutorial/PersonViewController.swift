@@ -15,13 +15,10 @@ class PersonViewController: UIViewController {
     private let nib = UINib(nibName: "MusicTableViewCell", bundle: nil)
     
 
-    private var array: [String] = []
-    
-    
-    func predictAge(for name: String) {
-        AF.request("https://api.agify.io?name=\(name)").responseDecodable(completionHandler: <#T##(DataResponse<Decodable, AFError>) -> Void#>)
    
-    }
+    
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +32,7 @@ class PersonViewController: UIViewController {
 extension PersonViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return array.count
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

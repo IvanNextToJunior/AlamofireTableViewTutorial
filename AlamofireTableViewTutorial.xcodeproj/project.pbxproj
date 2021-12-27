@@ -56,6 +56,44 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2C296C952779BA6300956581 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2CCF5FFA27787D9100CE02DB /* PersonTableViewCell.swift */,
+				2CCF5FFB27787D9100CE02DB /* PersonTableViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2C296C962779BA8400956581 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C296C922779B80300956581 /* Person.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2C296C972779BA9400956581 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C5FE11C27772A7E00B8AB11 /* PersonViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		2C296C982779BABB00956581 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C5FE11E27772A7E00B8AB11 /* Main.storyboard */,
+				2C5FE12127772A8C00B8AB11 /* Assets.xcassets */,
+				2C5FE12327772A8C00B8AB11 /* LaunchScreen.storyboard */,
+				2C5FE12627772A8C00B8AB11 /* Info.plist */,
+				2C5FE11827772A7E00B8AB11 /* AppDelegate.swift */,
+				2C5FE11A27772A7E00B8AB11 /* SceneDelegate.swift */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
 		2C5FE10C27772A7E00B8AB11 = {
 			isa = PBXGroup;
 			children = (
@@ -77,16 +115,10 @@
 		2C5FE11727772A7E00B8AB11 /* AlamofireTableViewTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				2C5FE11827772A7E00B8AB11 /* AppDelegate.swift */,
-				2C5FE11A27772A7E00B8AB11 /* SceneDelegate.swift */,
-				2C5FE11C27772A7E00B8AB11 /* PersonViewController.swift */,
-				2C296C922779B80300956581 /* Person.swift */,
-				2CCF5FFA27787D9100CE02DB /* PersonTableViewCell.swift */,
-				2CCF5FFB27787D9100CE02DB /* PersonTableViewCell.xib */,
-				2C5FE11E27772A7E00B8AB11 /* Main.storyboard */,
-				2C5FE12127772A8C00B8AB11 /* Assets.xcassets */,
-				2C5FE12327772A8C00B8AB11 /* LaunchScreen.storyboard */,
-				2C5FE12627772A8C00B8AB11 /* Info.plist */,
+				2C296C972779BA9400956581 /* Controller */,
+				2C296C962779BA8400956581 /* Model */,
+				2C296C952779BA6300956581 /* View */,
+				2C296C982779BABB00956581 /* Support Files */,
 			);
 			path = AlamofireTableViewTutorial;
 			sourceTree = "<group>";
