@@ -125,8 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				2C1959DC2782457D00B65699 /* View Model */,
-				2C296C962779BA8400956581 /* Model */,
 				2C296C952779BA6300956581 /* View */,
+				2C296C962779BA8400956581 /* Model */,
 				2C296C982779BABB00956581 /* Support Files */,
 			);
 			path = AlamofireTableViewTutorial;
