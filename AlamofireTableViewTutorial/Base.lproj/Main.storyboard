@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8oU-gj-nmX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -7,19 +8,62 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Name View Controller-->
+        <scene sceneID="LBw-vb-UoZ">
+            <objects>
+                <viewController id="fBq-d2-4WU" customClass="NameViewController" customModule="AlamofireTableViewTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YWC-ac-wUX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wiJ-wt-ngK">
+                                <rect key="frame" x="0.0" y="431" width="414" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите Ваше имя" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNU-WM-xo0">
+                                <rect key="frame" x="0.0" y="402" width="414" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hBJ-n1-X38"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RNU-WM-xo0" firstAttribute="centerX" secondItem="YWC-ac-wUX" secondAttribute="centerX" id="9RC-uJ-A18"/>
+                            <constraint firstItem="wiJ-wt-ngK" firstAttribute="centerX" secondItem="YWC-ac-wUX" secondAttribute="centerX" id="ABb-SE-LVH"/>
+                            <constraint firstItem="RNU-WM-xo0" firstAttribute="trailing" secondItem="hBJ-n1-X38" secondAttribute="trailing" id="GwT-K7-e3i"/>
+                            <constraint firstItem="hBJ-n1-X38" firstAttribute="trailing" secondItem="wiJ-wt-ngK" secondAttribute="trailing" id="S5D-I9-9NL"/>
+                            <constraint firstItem="wiJ-wt-ngK" firstAttribute="top" secondItem="RNU-WM-xo0" secondAttribute="bottom" constant="5" id="hyu-9A-NTO"/>
+                            <constraint firstItem="wiJ-wt-ngK" firstAttribute="leading" secondItem="hBJ-n1-X38" secondAttribute="leading" id="lNz-yj-9gY"/>
+                            <constraint firstItem="wiJ-wt-ngK" firstAttribute="centerY" secondItem="YWC-ac-wUX" secondAttribute="centerY" id="p89-En-ifA"/>
+                            <constraint firstItem="RNU-WM-xo0" firstAttribute="leading" secondItem="hBJ-n1-X38" secondAttribute="leading" id="zTj-uJ-WGq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="PLy-se-8rJ"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="wiJ-wt-ngK" id="Naw-jV-ebt"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="person" id="yvC-Sz-6No"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5zP-TW-tZe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="568" y="80"/>
+        </scene>
         <!--Person View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="PersonViewController" customModule="AlamofireTableViewTutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mCE-Tb-iqs">
-                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="u5s-w0-Fdc">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="818"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 </tableView>
@@ -41,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="541" y="80"/>
+            <point key="canvasLocation" x="1303" y="80"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7Hw-qh-XSq">
@@ -54,7 +98,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9tS-bN-0TC"/>
+                        <segue destination="fBq-d2-4WU" kind="relationship" relationship="rootViewController" id="7Xf-tv-feJ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EXU-U9-Bed" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

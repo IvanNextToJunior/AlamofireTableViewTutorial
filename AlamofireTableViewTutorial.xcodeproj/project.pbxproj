@@ -15,6 +15,7 @@
 		2C5FE12027772A7E00B8AB11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C5FE11E27772A7E00B8AB11 /* Main.storyboard */; };
 		2C5FE12227772A8C00B8AB11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5FE12127772A8C00B8AB11 /* Assets.xcassets */; };
 		2C5FE12527772A8C00B8AB11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C5FE12327772A8C00B8AB11 /* LaunchScreen.storyboard */; };
+		2C77F3102780C6E3007162DE /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C77F30F2780C6E3007162DE /* NameViewController.swift */; };
 		2CCF5FFC27787D9100CE02DB /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCF5FFA27787D9100CE02DB /* PersonTableViewCell.swift */; };
 		2CCF5FFD27787D9100CE02DB /* PersonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CCF5FFB27787D9100CE02DB /* PersonTableViewCell.xib */; };
 		E51D18B205EE05181E9A740D /* Pods_AlamofireTableViewTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51EAD029C966DF1D6D987D41 /* Pods_AlamofireTableViewTutorial.framework */; };
@@ -31,6 +32,7 @@
 		2C5FE12127772A8C00B8AB11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C5FE12427772A8C00B8AB11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C5FE12627772A8C00B8AB11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C77F30F2780C6E3007162DE /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
 		2CCF5FFA27787D9100CE02DB /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 		2CCF5FFB27787D9100CE02DB /* PersonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonTableViewCell.xib; sourceTree = "<group>"; };
 		51EAD029C966DF1D6D987D41 /* Pods_AlamofireTableViewTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamofireTableViewTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				2C5FE11C27772A7E00B8AB11 /* PersonViewController.swift */,
+				2C77F30F2780C6E3007162DE /* NameViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			files = (
 				2C296C932779B80300956581 /* Person.swift in Sources */,
 				2CCF5FFC27787D9100CE02DB /* PersonTableViewCell.swift in Sources */,
+				2C77F3102780C6E3007162DE /* NameViewController.swift in Sources */,
 				2C5FE11D27772A7E00B8AB11 /* PersonViewController.swift in Sources */,
 				2C5FE11927772A7E00B8AB11 /* AppDelegate.swift in Sources */,
 				2C296C9B2779BBC100956581 /* AlamofireNetworking.swift in Sources */,
