@@ -11,13 +11,22 @@ class UserData {
     private let key = "name"
     private let userDefaults = UserDefaults()
     
-    func getUserName(_ name: String) -> String {
-      
-        userDefaults.setValue(name, forKey: key)
-        
-        guard let userName = userDefaults.string(forKey: key) else {return ""}
-        print(userName)
-        return name
-    }
+    static var names: [String] = []
     
+    func save(_ name: String)  {
+        userDefaults.setValue(name, forKey: key)
+    }
+  
+    private var name: String {
+        get {
+            return userDefaults.value(forKey: key) as! String
+        }
+        set {
+            guard let userName = userDefaults.string(forKey: key) else { return  }
+            UserData.names.append(userName)
+        }
+    
+    }
+  
+
 }

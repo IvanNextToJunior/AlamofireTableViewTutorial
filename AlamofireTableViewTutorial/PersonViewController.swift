@@ -7,18 +7,17 @@
 
 import UIKit
 
+
+
 class PersonViewController: UIViewController {
     
     @IBOutlet weak private var tableView: UITableView!
     
+   
     private let identifier = "cell"
     private let nib = UINib(nibName: "PersonTableViewCell", bundle: nil)
-    private let model = AlamofireNetworking()
    
-    private var people: [Person] {
-        model.predictAge(for: "Ivan")
-    }
-    
+    private let people = UserData.names
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,8 +47,8 @@ extension PersonViewController: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! PersonTableViewCell
     
-        cell.nameLabel.text = people[indexPath.row].name
-        cell.ageLabel.text = String(people[indexPath.row].age)
+        cell.nameLabel.text = people[indexPath.row]
+        
         return cell
     }
     
