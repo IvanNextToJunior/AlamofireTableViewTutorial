@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C1959DA278234E800B65699 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1959D9278234E800B65699 /* UserData.swift */; };
 		2C296C932779B80300956581 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C296C922779B80300956581 /* Person.swift */; };
 		2C296C9B2779BBC100956581 /* AlamofireNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C296C9A2779BBC100956581 /* AlamofireNetworking.swift */; };
 		2C2E918E278305790071499C /* RegularExpressionValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E918D278305790071499C /* RegularExpressionValidator.swift */; };
@@ -28,7 +27,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C1959D9278234E800B65699 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		2C296C922779B80300956581 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		2C296C9A2779BBC100956581 /* AlamofireNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworking.swift; sourceTree = "<group>"; };
 		2C2E918D278305790071499C /* RegularExpressionValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularExpressionValidator.swift; sourceTree = "<group>"; };
@@ -75,7 +73,6 @@
 		2C1959DC2782457D00B65699 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
-				2C1959D9278234E800B65699 /* UserData.swift */,
 			);
 			name = "View Model";
 			sourceTree = "<group>";
@@ -283,7 +280,6 @@
 				2CCF5FFC27787D9100CE02DB /* PersonTableViewCell.swift in Sources */,
 				2C2E918E278305790071499C /* RegularExpressionValidator.swift in Sources */,
 				2C2E9192278305DB0071499C /* TextLengthValidator.swift in Sources */,
-				2C1959DA278234E800B65699 /* UserData.swift in Sources */,
 				2C2E9193278305DB0071499C /* BaseValidator.swift in Sources */,
 				2C77F3102780C6E3007162DE /* NameViewController.swift in Sources */,
 				2C5FE11D27772A7E00B8AB11 /* PersonViewController.swift in Sources */,
