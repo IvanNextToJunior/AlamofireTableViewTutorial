@@ -21,7 +21,7 @@ class NameViewController: UIViewController {
         do {
             let name = try nameTextField.validateText(validators: [TextLengthValidator(minTextLength: 2, message: "В имени должно быть не менее 2 символов"), RegularExpressionValidator(pattern: "^[a-zA-Zа-яА-Я]+$", message: "Имя содержит недопустимые симоволы")])
             
-            userData.save(name)
+     
             performSegue(withIdentifier: "person", sender: self)
         }
         catch {
@@ -34,7 +34,7 @@ class NameViewController: UIViewController {
         }
     }
     
-    let userData = UserData()
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()

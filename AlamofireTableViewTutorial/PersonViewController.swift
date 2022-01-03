@@ -17,7 +17,7 @@ class PersonViewController: UIViewController {
     private let identifier = "cell"
     private let nib = UINib(nibName: "PersonTableViewCell", bundle: nil)
    
-    private let people = UserData.names
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
