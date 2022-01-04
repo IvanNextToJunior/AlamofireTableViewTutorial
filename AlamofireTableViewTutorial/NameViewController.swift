@@ -14,15 +14,16 @@ class NameViewController: UIViewController {
     @IBAction private func registerNameButtonTouchUpInside(_ sender: UIButton) {
         validate()
     }
-    private let content = TableOFContents()
+
     
     
-    let userDefaults = UserData()
+ 
+    
     private func validate() {
        
         do {
             let name = try nameTextField.validateText(validators: [TextLengthValidator(minTextLength: 2, message: "В имени должно быть не менее 2 символов"), RegularExpressionValidator(pattern: "^[a-zA-Zа-яА-Я]+$", message: "Имя содержит недопустимые симоволы")])
-            content.names.append(name)
+            UserData.names.append(name)
             performSegue(withIdentifier: "person", sender: self)
             
         }
@@ -44,13 +45,6 @@ class NameViewController: UIViewController {
         nameTextField.delegate = self
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destination = segue.destination as! PersonViewController
-        destination.delegate = self
-//        guard !destination.model.people.isEmpty else {return}
-      
-    
-    }
 }
 extension NameViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -58,15 +52,3 @@ extension NameViewController: UITextFieldDelegate {
     }
 }
 
-extension NameViewController: PersonViewControllerDelegate {
-   
-    func personViewControllerDidShowVC(vc: PersonViewController) {
-      
-        userDefaults.save(names: content.names)
-        vc.userDefaults = userDefaults
-      
-         
-    }
-    
-    
-}
