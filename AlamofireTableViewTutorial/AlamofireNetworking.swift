@@ -17,6 +17,7 @@ class AlamofireNetworking {
             AF.request("https://api.agify.io?name=\(name)").responseDecodable(of: Person.self, queue: .global(qos: .userInitiated)){ response in
               
                 guard let person = response.value else {return}
+                print("Person is: \(person)")
                 self.people.append(person)
         }
          
