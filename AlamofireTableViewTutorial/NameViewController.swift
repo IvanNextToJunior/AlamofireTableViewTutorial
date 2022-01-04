@@ -15,10 +15,6 @@ class NameViewController: UIViewController {
         validate()
     }
 
-    
-    
- 
-    
     private func validate() {
        
         do {
@@ -36,9 +32,7 @@ class NameViewController: UIViewController {
             present(alert, animated: true, completion: nil)
         }
     }
-    
-   
-    
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         

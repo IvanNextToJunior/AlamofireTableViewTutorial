@@ -15,13 +15,10 @@ class PersonViewController: UIViewController {
     
     @IBOutlet weak private var tableView: UITableView!
     
-  
-    
     private let identifier = "cell"
     private let nib = UINib(nibName: "PersonTableViewCell", bundle: nil)
-   
-private let model = AlamofireNetworking()
- 
+    
+    private let model = AlamofireNetworking()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,14 +30,14 @@ private let model = AlamofireNetworking()
         tableView.register(nib, forCellReuseIdentifier: identifier)
         tableView.dataSource = self
         
-    
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
-      
+        
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -65,7 +62,7 @@ extension PersonViewController: UITableViewDataSource {
         cell.nameLabel.text = person.name
         cell.ageLabel.text = String(person.age)
         
-  
+        
         return cell
     }
     
