@@ -14,7 +14,6 @@
 		2C2E9193278305DB0071499C /* BaseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E9191278305DB0071499C /* BaseValidator.swift */; };
 		2C2E9197278306570071499C /* TextField_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E9195278306560071499C /* TextField_Extension.swift */; };
 		2C2E9198278306570071499C /* ValidationErrorAndValidationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E9196278306570071499C /* ValidationErrorAndValidationHandler.swift */; };
-		2C2E91B327838B140071499C /* TableOFContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E91B227838B140071499C /* TableOFContents.swift */; };
 		2C5FE11927772A7E00B8AB11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5FE11827772A7E00B8AB11 /* AppDelegate.swift */; };
 		2C5FE11B27772A7E00B8AB11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5FE11A27772A7E00B8AB11 /* SceneDelegate.swift */; };
 		2C5FE11D27772A7E00B8AB11 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5FE11C27772A7E00B8AB11 /* PersonViewController.swift */; };
@@ -36,7 +35,6 @@
 		2C2E9191278305DB0071499C /* BaseValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseValidator.swift; sourceTree = "<group>"; };
 		2C2E9195278306560071499C /* TextField_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField_Extension.swift; sourceTree = "<group>"; };
 		2C2E9196278306570071499C /* ValidationErrorAndValidationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationErrorAndValidationHandler.swift; sourceTree = "<group>"; };
-		2C2E91B227838B140071499C /* TableOFContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableOFContents.swift; sourceTree = "<group>"; };
 		2C5FE11527772A7E00B8AB11 /* AlamofireTableViewTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamofireTableViewTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C5FE11827772A7E00B8AB11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C5FE11A27772A7E00B8AB11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,7 +75,6 @@
 		2C1959DC2782457D00B65699 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
-				2C2E91B227838B140071499C /* TableOFContents.swift */,
 				2CA2327127847E4500C99338 /* UserData.swift */,
 			);
 			name = "View Model";
@@ -295,7 +292,6 @@
 				2C296C9B2779BBC100956581 /* AlamofireNetworking.swift in Sources */,
 				2C2E9198278306570071499C /* ValidationErrorAndValidationHandler.swift in Sources */,
 				2C5FE11B27772A7E00B8AB11 /* SceneDelegate.swift in Sources */,
-				2C2E91B327838B140071499C /* TableOFContents.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

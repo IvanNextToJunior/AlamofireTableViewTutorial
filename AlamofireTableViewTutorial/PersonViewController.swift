@@ -6,10 +6,6 @@
 //
 
 import UIKit
-protocol PersonViewControllerDelegate: class {
-    func personViewControllerDidShowVC(vc: PersonViewController)
-}
-
 
 class PersonViewController: UIViewController {
     

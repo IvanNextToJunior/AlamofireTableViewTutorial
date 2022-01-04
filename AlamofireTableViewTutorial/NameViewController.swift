@@ -14,9 +14,9 @@ class NameViewController: UIViewController {
     @IBAction private func registerNameButtonTouchUpInside(_ sender: UIButton) {
         validate()
     }
-
+    
     private func validate() {
-       
+        
         do {
             let name = try nameTextField.validateText(validators: [TextLengthValidator(minTextLength: 2, message: "В имени должно быть не менее 2 символов"), RegularExpressionValidator(pattern: "^[a-zA-Zа-яА-Я]+$", message: "Имя содержит недопустимые симоволы")])
             UserData.names.append(name)
@@ -32,7 +32,7 @@ class NameViewController: UIViewController {
             present(alert, animated: true, completion: nil)
         }
     }
-  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

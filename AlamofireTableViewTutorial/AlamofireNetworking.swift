@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 class AlamofireNetworking {
-  
+    
     private var human: Person?
     
     func predictAge(for personAtIndex: Int) -> Person {
@@ -20,8 +20,9 @@ class AlamofireNetworking {
             response in
             
             guard let person = response.value else {return}
-            assert(response.value != nil, "There is no person")
             individual = person
+            
+            assert(response.value != nil, "There is no person")
             assert(self.human != nil)
             print("\(person)")
             print(self.human)
