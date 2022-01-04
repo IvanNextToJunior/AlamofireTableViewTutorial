@@ -6,7 +6,8 @@
 //
 
 import Foundation
+
 class TableOFContents {
     var names: [String] = []
-    var people: [Person] = []
+    
 }

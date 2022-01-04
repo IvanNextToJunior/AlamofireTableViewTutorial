@@ -10,18 +10,19 @@ import Alamofire
 
 class AlamofireNetworking {
   
-    
-   
-    func predictAge(for name: String) -> [Person]{
-      
-        AF.request("https://api.agify.io?name[]=\(name)").responseDecodable(of: Person.self, queue: .global(qos: .userInitiated)){ response in
-          
-            guard let person = response.value else { return }
-            print(person)
-           
-            
+    var people: [Person] = []
+
+    func getAge(for names: [String]) -> [Person] {
+        for name in names {
+            AF.request("https://api.agify.io?name=\(name)").responseDecodable(of: Person.self, queue: .global(qos: .userInitiated)){ response in
+              
+                guard let person = response.value else {return}
+                self.people.append(person)
         }
-   return []
-}
+         
+    }
+return people
+    }
+ 
 
 }
