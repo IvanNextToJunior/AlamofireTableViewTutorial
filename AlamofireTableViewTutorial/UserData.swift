@@ -8,7 +8,6 @@
 import Foundation
 
 class UserData {
-    
     static var names: [String] = []
     
 }
