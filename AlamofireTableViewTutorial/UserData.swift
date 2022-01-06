@@ -8,6 +8,12 @@
 import Foundation
 class UserData {
     
-    static var names: [String] = []
+private let key = "name"
+private let userDefaults = UserDefaults()
+ static var names: [String] = []
+    
+    func saveArray()  {
+        userDefaults.set(UserData.names, forKey: key)
+    }
 
 }
