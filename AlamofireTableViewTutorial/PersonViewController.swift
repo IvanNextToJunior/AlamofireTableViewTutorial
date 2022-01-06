@@ -28,19 +28,7 @@ class PersonViewController: UIViewController {
         
         
     }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
-        
-    }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
-    }
+
 }
 
 extension PersonViewController: UITableViewDataSource {
@@ -54,10 +42,10 @@ extension PersonViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! PersonTableViewCell
         
         let person = model.predictAge(for: indexPath.row)
-        for field in person{
-        cell.nameLabel.text = field.name
-            cell.ageLabel.text = String(field.age!)
-        }
+//        for field in person{
+//        cell.nameLabel.text = field.name
+//            cell.ageLabel.text = String(field.age!)
+//        }
         
         return cell
     }
