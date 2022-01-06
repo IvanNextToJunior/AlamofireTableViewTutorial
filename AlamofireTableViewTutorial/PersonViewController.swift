@@ -54,10 +54,10 @@ extension PersonViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! PersonTableViewCell
         
         let person = model.predictAge(for: indexPath.row)
-        
-        cell.nameLabel.text = person.name
-        cell.ageLabel.text = String(person.age)
-        
+        for field in person{
+        cell.nameLabel.text = field.name
+            cell.ageLabel.text = String(field.age!)
+        }
         
         return cell
     }

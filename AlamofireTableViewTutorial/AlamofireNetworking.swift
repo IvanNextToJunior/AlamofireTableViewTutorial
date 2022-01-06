@@ -10,23 +10,33 @@ import Alamofire
 
 class AlamofireNetworking {
     
-    private var human = Person()
+    private var human: [Person] = []
     
-    func predictAge(for personAtIndex: Int) -> Person {
-      
+    func predictAge(for personAtIndex: Int) -> [Person]{
+   
+        
         AF.request("https://api.agify.io?name[]=\(UserData.names[personAtIndex])").responseDecodable(of: [Person].self) {
             response in
-            print(response.error.debugDescription)
-            guard let elements = response.value else {return}
-          let person = elements[personAtIndex]
-            assert(person.name != "" && person.age != 0, "There is no person")
             
+
+            guard let person = response.value else {return}
+            print(response.value)
             self.human = person
-            print(self.human)
-            
-           
+
+
+
         }
-        return human
+       
+//        AF.request("https://api.agify.io?name[]=\(UserData.names[personAtIndex])").responseString { response in
+//            guard let string = response.value else {
+//                print(response.error)
+//                return}
+//
+//            print(string)
+//
+//        }
+
+       return human
     }
     
     

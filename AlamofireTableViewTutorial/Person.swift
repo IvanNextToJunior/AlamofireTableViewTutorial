@@ -7,8 +7,8 @@
 
 import Foundation
 
-class Person: Decodable {
+struct Person: Decodable {
     
-   var name = ""
-    var age = 0
+   let name: String?
+  let age: Int?
 }
