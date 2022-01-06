@@ -6,11 +6,9 @@
 //
 
 import Foundation
+
 class UserData {
     
-
- static var names: [String] = []
+    static var names: [String] = []
     
-   
-
 }
