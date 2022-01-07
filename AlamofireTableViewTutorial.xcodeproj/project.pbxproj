@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2C296C932779B80300956581 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C296C922779B80300956581 /* Person.swift */; };
-		2C296C9B2779BBC100956581 /* AlamofireNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C296C9A2779BBC100956581 /* AlamofireNetworking.swift */; };
 		2C2E918E278305790071499C /* RegularExpressionValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E918D278305790071499C /* RegularExpressionValidator.swift */; };
 		2C2E9192278305DB0071499C /* TextLengthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E9190278305DB0071499C /* TextLengthValidator.swift */; };
 		2C2E9193278305DB0071499C /* BaseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2E9191278305DB0071499C /* BaseValidator.swift */; };
@@ -29,7 +28,6 @@
 
 /* Begin PBXFileReference section */
 		2C296C922779B80300956581 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		2C296C9A2779BBC100956581 /* AlamofireNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworking.swift; sourceTree = "<group>"; };
 		2C2E918D278305790071499C /* RegularExpressionValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularExpressionValidator.swift; sourceTree = "<group>"; };
 		2C2E9190278305DB0071499C /* TextLengthValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextLengthValidator.swift; sourceTree = "<group>"; };
 		2C2E9191278305DB0071499C /* BaseValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseValidator.swift; sourceTree = "<group>"; };
@@ -94,7 +92,6 @@
 		2C296C962779BA8400956581 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2C296C9A2779BBC100956581 /* AlamofireNetworking.swift */,
 				2C296C922779B80300956581 /* Person.swift */,
 			);
 			name = Model;
@@ -289,7 +286,6 @@
 				2C5FE11D27772A7E00B8AB11 /* PersonViewController.swift in Sources */,
 				2C5FE11927772A7E00B8AB11 /* AppDelegate.swift in Sources */,
 				2C2E9197278306570071499C /* TextField_Extension.swift in Sources */,
-				2C296C9B2779BBC100956581 /* AlamofireNetworking.swift in Sources */,
 				2C2E9198278306570071499C /* ValidationErrorAndValidationHandler.swift in Sources */,
 				2C5FE11B27772A7E00B8AB11 /* SceneDelegate.swift in Sources */,
 			);

@@ -6,15 +6,17 @@
 //
 
 import UIKit
-
+import Alamofire
 class PersonViewController: UIViewController {
     
     @IBOutlet weak private var tableView: UITableView!
     
+    @IBOutlet weak private var spinner: UIActivityIndicatorView!
+   
     private let identifier = "cell"
     private let nib = UINib(nibName: "PersonTableViewCell", bundle: nil)
     
-    private let model = AlamofireNetworking()
+    private var human: [Person] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +27,28 @@ class PersonViewController: UIViewController {
     private func setup () {
         tableView.register(nib, forCellReuseIdentifier: identifier)
         tableView.dataSource = self
+      
+       
+        
+    }
+  
+    private func predictAge(for personAtIndex: Int) -> [Person] {
+        AF.request("https://api.agify.io?name[]=\(UserData.names[personAtIndex])").responseDecodable(of: [Person].self) {
+            response in
+         
+            DispatchQueue.main.async { [weak self] in
+                self?.tableView.reloadData()
+                self?.spinner.startAnimating()
+            }
+            
+
+            guard let person = response.value else {return}
+            print(response.value)
+            self.human = person
         
         
+        }
+   return human
     }
 
 }
@@ -41,11 +63,16 @@ extension PersonViewController: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! PersonTableViewCell
         
-        let person = model.predictAge(for: indexPath.row)
-//        for field in person{
-//        cell.nameLabel.text = field.name
-//            cell.ageLabel.text = String(field.age!)
-//        }
+      
+        let person = predictAge(for: indexPath.row)
+        
+        guard !human.isEmpty else {return cell}
+        spinner.stopAnimating()
+        
+        for field in person {
+        cell.nameLabel.text = field.name
+            cell.ageLabel.text = String(field.age)
+        }
         
         return cell
     }
